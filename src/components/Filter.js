@@ -58,8 +58,7 @@ const Filter = () => {
   }
 
   return (
-    <div>
-      
+    <div className="filter">  
       <MDBRow>
         <MDBCol size="4">
           <h5> Ages</h5>
@@ -78,11 +77,7 @@ const Filter = () => {
           </MDBBtnGroup>
         </MDBCol>
       </MDBRow>
-      <br />
-
       <h5> Costs</h5>
-      <br /> 
-
       <MDBRow>
         <MDBCol md="2">
           <div className="form-check">

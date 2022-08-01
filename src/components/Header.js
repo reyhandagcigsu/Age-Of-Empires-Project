@@ -14,7 +14,7 @@ export default function App() {
   const [showNavRight, setShowNavRight] = useState(false);
 
   return (
-    <MDBNavbar expand="lg" light bgColor="light" style={{ marginTop: "30px" }}>
+    <MDBNavbar expand="lg" light bgColor="light" className="header">
       <MDBContainer fluid>
         <MDBNavbarToggler
           type="button"
@@ -30,12 +30,12 @@ export default function App() {
         <MDBCollapse navbar show={showNavRight}>
           <MDBNavbarNav right fullWidth={false} className="mb-2 mb-lg-0">
             <MDBNavbarItem>
-              <MDBNavbarLink className="fs-2"  href="/">
+              <MDBNavbarLink className="fs-4"  href="/">
                 Home
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink className="fs-2" href="/Units">Units</MDBNavbarLink>
+              <MDBNavbarLink className="fs-4" href="/Units">Units</MDBNavbarLink>
             </MDBNavbarItem>
           </MDBNavbarNav>
         </MDBCollapse>

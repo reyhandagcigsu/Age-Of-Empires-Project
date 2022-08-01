@@ -35,15 +35,16 @@ const Home = () => {
   };
 
   return (
-    <MDBContainer>
-      <h1 className="text-center" style={{ marginTop: "70px" }}> UNITS PAGE</h1>
+    <MDBContainer className="units">
+      <h1 className=" text-center "> Units Page</h1>
       <div className="container" >
+        <br /> 
         <Filter />
         <br />
 
         <MDBTable className="table table-hover">
-          <MDBTableHead dark>
-            <tr>
+          <MDBTableHead>
+            <tr className='table-primary'>
               <th scope="col"> Id</th>
               <th scope="col"> Name</th>
               <th scope="col"> Age</th>
