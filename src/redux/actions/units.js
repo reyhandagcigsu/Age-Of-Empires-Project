@@ -53,7 +53,7 @@ export const filterByCostError = (error)=> ({
 });   */
 
 
-export const filterStart = (units, value,costObject)=> ({
+export const filterStart = (units, value,costObject)=> ({  // value -> age 
     type: types.FILTER_START,
     payload: {
         units:units,

@@ -8,7 +8,7 @@ const UnitDetail = (props) => {
 
   const { state } = location;
   const item = state;
-  console.log(item);
+  // console.log(item);
 
   return (
     <div className="container unitDetail" >
@@ -19,55 +19,55 @@ const UnitDetail = (props) => {
             ID
             <span className="badge badge-light">{item.id}</span>
           </li>
-          <li class="list-group-item  ">
+          <li className="list-group-item  ">
             Name
-            <span class="badge badge-light">{item.name}</span>
+            <span className="badge badge-light">{item.name}</span>
           </li>
-          <li class="list-group-item  ">
+          <li className="list-group-item  ">
             Description
-            <span class="badge badge-light">{item.description}</span>
+            <span className="badge badge-light">{item.description}</span>
           </li>
-          <li class="list-group-item  ">
+          <li className="list-group-item  ">
             Min Required Age
-            <span class="badge badge-light">{item.age}</span>
+            <span className="badge badge-light">{item.age}</span>
           </li>
-          <li class="list-group-item  ">
+          <li className="list-group-item  ">
             Wood Cost
-            <span class="badge badge-light">
+            <span className="badge badge-light">
               {item.cost.hasOwnProperty("Wood") ? item.cost.Wood : "No Cost"}
             </span>
           </li>
-          <li class="list-group-item  ">
+          <li className="list-group-item  ">
             Food Cost
-            <span class="badge badge-light">
+            <span className="badge badge-light">
               {item.cost.hasOwnProperty("Food") ? item.cost.Food : "No Cost"}
             </span>
           </li>
-          <li class="list-group-item  ">
+          <li className="list-group-item  ">
             Gold Cost
-            <span class="badge badge-light">
+            <span className="badge badge-light">
               {item.cost.hasOwnProperty("Gold") ? item.cost.Gold : "No Cost"}
             </span>
           </li>
-          <li class="list-group-item  ">
+          <li className="list-group-item  ">
             Build Time
-            <span class="badge badge-light">{item.build_time}</span>
+            <span className="badge badge-light">{item.build_time}</span>
           </li>
-          <li class="list-group-item  ">
+          <li className="list-group-item  ">
             Reload Time
-            <span class="badge badge-light">{item.reload_time}</span>
+            <span className="badge badge-light">{item.reload_time}</span>
           </li>
-          <li class="list-group-item  ">
+          <li className="list-group-item  ">
             Hit Points
-            <span class="badge badge-light">{item.hit_points}</span>
+            <span className="badge badge-light">{item.hit_points}</span>
           </li>
-          <li class="list-group-item  ">
+          <li className="list-group-item  ">
             Attack
-            <span class="badge badge-light">{item.attack}</span>
+            <span className="badge badge-light">{item.attack}</span>
           </li>
-          <li class="list-group-item  ">
+          <li className="list-group-item  ">
             Accuracy
-            <span class="badge badge-light">{item.accuracy}</span>
+            <span className="badge badge-light">{item.accuracy}</span>
           </li>
         </ul>
       </MDBContainer>

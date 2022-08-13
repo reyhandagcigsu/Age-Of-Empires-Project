@@ -22,7 +22,7 @@ export function* onLoadUnitsStartAsync() {
   // getting reponse from the api calling
   try {
     const response = yield call(loadUnitsApi);
-    // console.log(response.data);
+    console.log(response.data);
     if (response.status === 200) {
       yield delay(500);
       yield put(loadUnitsSuccess(response.data));
@@ -54,10 +54,11 @@ export function* onFilterByCostStartAsync(payload) {
 
 export function* onFilterStart(payload) {
   try {
+    // console.log(payload)
     const response = yield call(filterUnits, payload.payload);
     yield put(filterSuccess(response));
   } catch (error) {
-    yield put(filterError(error.response.data));
+    yield put(filterError(error.response));
   }
 }
 

@@ -53,7 +53,7 @@ const Filter = () => {
 
   const setValuesOnChange = (costType, value) => {
     let costFilter_ = JSON.parse(JSON.stringify(costFilter));
-    costFilter_[costType]["values"] = value
+    costFilter_[costType]["values"] = value;
     setCostFilter(costFilter_);
   }
 
@@ -63,15 +63,15 @@ const Filter = () => {
         <MDBCol size="4">
           <h5> Ages</h5>
           <MDBBtnGroup>
-            <MDBBtn onClick={() => filterByAgesHandler("All")}>All </MDBBtn>
-            <MDBBtn onClick={() => filterByAgesHandler("Dark")}>Dark </MDBBtn>
-            <MDBBtn onClick={() => filterByAgesHandler("Feudal")}>
+            <MDBBtn data-testid="filterByAgesHandlerButton" onClick={() => filterByAgesHandler("All")}>All </MDBBtn>
+            <MDBBtn data-testid="filterByAgesHandlerButton" onClick={() => filterByAgesHandler("Dark")}>Dark </MDBBtn>
+            <MDBBtn data-testid="filterByAgesHandlerButton" onClick={() => filterByAgesHandler("Feudal")}>
               Feudal
             </MDBBtn>
-            <MDBBtn onClick={() => filterByAgesHandler("Castle")}>
+            <MDBBtn data-testid="filterByAgesHandlerButton" onClick={() => filterByAgesHandler("Castle")}>
               Castle
             </MDBBtn>
-            <MDBBtn onClick={() => filterByAgesHandler("Imperial")}>
+            <MDBBtn data-testid="filterByAgesHandlerButton" onClick={() => filterByAgesHandler("Imperial")}>
               Imperial
             </MDBBtn>
           </MDBBtnGroup>
